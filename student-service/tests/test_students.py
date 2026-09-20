@@ -51,7 +51,7 @@ def test_authenticated_user_can_get_all_students(
         headers=student_headers,
     )
 
-    assert response.status_code == 0
+    assert response.status_code == 200
     assert len(response.json()) == 1
 
 
